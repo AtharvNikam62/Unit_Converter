@@ -1,0 +1,40 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Measurement Converter</title>
+    <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <div class="container">
+            <h1>Unit Converter</h1>
+            <div class="input-container">
+                <label for="unitType">Select Unit Type:</label>
+                <select id="unitType" onchange="changeUnitType()">
+                    <option value="temperature">Temperature</option>
+                    <option value="distance">Distance</option>
+                </select>
+            </div>
+            <div class="input-container">
+                <label for="value">Value:</label>
+                <input type="number" id="value" class="short-input">
+            </div>
+            <div class="input-container">
+                <label for="fromUnit">From:</label>
+                <select id="fromUnit"></select>
+            </div>
+            <div class="input-container">
+                <label for="toUnit">To:</label>
+                <select id="toUnit"></select>
+            </div>
+            <button onclick="convert()">Convert</button>
+            <div class="result-container">
+                <p id="result">Result: </p>
+            </div>
+        </div>
+    
+        <script src="script.js"></script>
+    </body>
+    </html>
+    
